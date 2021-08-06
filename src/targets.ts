@@ -30,7 +30,7 @@ import * as deploy_targets_operations_http from './targets/operations/http';
 import * as deploy_targets_operations_open from './targets/operations/open';
 import * as deploy_targets_operations_script from './targets/operations/script';
 import * as deploy_targets_operations_slack from './targets/operations/slack';
-import * as deploy_targets_operations_sql from './targets/operations/sql';
+// import * as deploy_targets_operations_sql from './targets/operations/sql';
 import * as deploy_targets_operations_wait from './targets/operations/wait';
 import * as deploy_transformers from './transformers';
 import * as deploy_values from './values';
@@ -596,9 +596,9 @@ export async function executeTargetOperations(opts: ExecuteTargetOperationOption
                 executor = deploy_targets_operations_slack.execute;
                 break;
 
-            case 'sql':
-                executor = deploy_targets_operations_sql.execute;
-                break;
+            // case 'sql':
+            //     executor = deploy_targets_operations_sql.execute;
+            //     break;
 
             case 'wait':
                 executor = deploy_targets_operations_wait.execute;
